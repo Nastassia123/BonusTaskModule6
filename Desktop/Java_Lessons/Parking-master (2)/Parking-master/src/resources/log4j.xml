@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "dtd/log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+					 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					 xsi:schemaLocation="http://jakarta.apache.org/log4j/ ">
+	<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+	<appender name="FileTxtAppender" class="org.apache.log4j.FileAppender">
+		<param name="File" value="log/log.txt"/>
+
+		<param name="Append" value="true"/>
+		<param name="Threshold" value="INFO"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p [%c] %m%n"/>
+		</layout>
+	</appender>
+
+	<appender name="console_log" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n"/>
+		</layout>
+	</appender>
+
+	<logger name="com.epam.ta.parking.view.ViewPerformer"
+			additivity="false">
+		<level value="info"/>
+		<appender-ref ref="console_log"/>
+	</logger>
+
+	<root>
+		<priority value="debug"/>
+		<appender-ref ref="FileTxtAppender"/>
+	</root>
+
+</log4j:configuration>
