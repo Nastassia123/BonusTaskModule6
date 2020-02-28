@@ -8,8 +8,8 @@ import org.junit.Test;
 public class SubCalcJunit extends BaseTest {
 
     @Test
-    public void FourDivideFour() {
-        long result = calculator.sub(2, 1);
-        Assert.assertTrue(result == 1);
+    public void testSubstructionOperationWithJUnit() {
+        long result = calculator.sub(2, 23);
+        Assert.assertTrue(result == 22);
     }
 }

@@ -8,8 +8,8 @@ import org.junit.Test;
 public class MulCalcJunit extends BaseTest {
 
     @Test
-    public void FourDivideFour() {
-        long result = calculator.mult(1, 2);
+    public void testMultiplicationOperationWithJUnit() {
+        long result = calculator.mult(1, 100);
         Assert.assertTrue(result == 2);
     }
 }

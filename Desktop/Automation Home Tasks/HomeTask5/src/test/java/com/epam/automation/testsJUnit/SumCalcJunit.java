@@ -8,8 +8,8 @@ import org.junit.Test;
 public class SumCalcJunit extends BaseTest {
 
     @Test
-    public void FourDivideFour() {
-        long result = calculator.sum(4, 4);
+    public void testSummationOperationWithJUnit() {
+        long result = calculator.sum(4, -4);
         Assert.assertTrue(result == 8);
     }
 }

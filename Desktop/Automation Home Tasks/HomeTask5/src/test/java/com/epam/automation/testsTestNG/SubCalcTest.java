@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class SubCalcTest extends BaseTest {
 
     @Test(groups = "divisionTest", dataProvider = "longParamsForSub")
-    public void testSubWithLongValues(long a, long b, long expected) {
+    public void testSubstractionWithLongValuesTestNG(long a, long b, long expected) {
         long result = calculator.sub(a, b);
         Assert.assertEquals(result, expected, "Invalid result value of sub operation with long values");
     }
@@ -16,16 +16,16 @@ public class SubCalcTest extends BaseTest {
     @DataProvider(name = "longParamsForSub")
     Object[][] longValuesForSub() {
         return new Object[][]{
-                {1, 1, 0},
-                {45, 1, 44},
-                {90, 0, 90},
-                {135, -1, 136},
+                {-1, -1, 2},
+                {-3, 1, 2},
+                {90, -45, 90},
+                {135, 0, 136},
                 {0, 120, -120}
         };
     }
 
     @Test(groups = "divisionTest", dataProvider = "doubleParamsForSub")
-    public void testSubWithLongValues(double a, double b, double expected) {
+    public void testSubstractionWithDoubleValuesTestNG(double a, double b, double expected) {
         double result = calculator.sub(a, b);
         Assert.assertEquals(result, expected, "Invalid result value of sub operation with double values");
     }
@@ -33,10 +33,10 @@ public class SubCalcTest extends BaseTest {
     @DataProvider(name = "doubleParamsForSub")
     Object[][] doubleValuesForSub() {
         return new Object[][]{
-                {1.5, 1, 0.5},
-                {45.7, 1.0, 44.7},
-                {-90.5, -1.5, -89.0},
-                {135.5, -1, 136.5},
+                {-1.0, -1.0, 2.0},
+                {-3.9, 1.5, 2.0},
+                {90.0, -45.0, 90.0},
+                {135.0, 0.0, 136.0},
                 {0.0, 120.0, -120.0}
         };
     }

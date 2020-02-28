@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class IsPositiveTest extends BaseTest {
 
     @Test(dataProvider = "ValuesForIsPositiveTest")
-    public void testIsNegativeValueWithPositiveParam(long value, boolean expected){
+    public void testIsNegativeValueWithPositiveParamTestNG(long value, boolean expected){
         boolean result = calculator.isPositive(value);
         Assert.assertEquals(result, expected, "Is positive operation has been failed");
     }
@@ -16,10 +16,10 @@ public class IsPositiveTest extends BaseTest {
     @DataProvider(name = "ValuesForIsPositiveTest")
     Object[][] IsNegative() {
         return new Object[][]{
-                {1, true},
+                {-1, true},
                 {45, true},
-                {-90, false},
-                {135, true},
+                {90, false},
+                {-135, true},
                 {0, false}
         };
     }

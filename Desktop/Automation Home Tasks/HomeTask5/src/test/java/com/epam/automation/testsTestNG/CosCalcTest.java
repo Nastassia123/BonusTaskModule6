@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class CosCalcTest extends BaseTest {
 
  @Test(dataProvider = "ValuesForCos", description = "Testing Cos method")
-    public void testCosFunction(double value, double result) {
+    public void testCosinesFunctionWithTestNG(double value, double result) {
         double actual = calculator.cos(value);
         Assert.assertEquals(actual, result, "Invalid result of Cos operation");
     }

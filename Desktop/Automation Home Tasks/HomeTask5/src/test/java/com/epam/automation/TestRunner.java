@@ -14,8 +14,7 @@ public class TestRunner {
           suite.setName("Calculator operations suite");
           List<String> files = new ArrayList<>();
           files.addAll(new ArrayList<String>() {{
-              add("src/test/resources/configutationTest.xml");
-          }
+              add("src/test/resources/configutationTest.xml"); }
           }
           );
         suite.setSuiteFiles(files);

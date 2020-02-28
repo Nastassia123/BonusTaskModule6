@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class SqrtCalcTest extends BaseTest {
 
  @Test(dataProvider = "ValuesForSqrt", description = "Testing Sqrt method")
-    public void testSqrtFunction(double value, double result) {
+    public void testSquareRootFunctionWithTestNG(double value, double result) {
         double actual = calculator.sqrt(value);
         Assert.assertEquals(actual, result, "Invalid result of Sqrt operation");
     }
@@ -20,7 +20,7 @@ public class SqrtCalcTest extends BaseTest {
         return new Object[][] {
                 { 1, 1 },
                 { 100, 10 },
-                { 4, 2 },
+                { -4, 2 },
                 {-1, -1}
         };
     }

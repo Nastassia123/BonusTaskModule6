@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class TgCalcTest extends BaseTest {
 
  @Test(dataProvider = "ValuesForTg", description = "Testing Tg method")
-    public void testTgFunction(double value, double result) {
+    public void testTangensFunctionWithTestNG(double value, double result) {
         double actual = calculator.tg(Math.toRadians(value));
         Assert.assertEquals(actual, result, "Invalid result of Tg operation");
     }

@@ -9,7 +9,7 @@ public class MulCalcTest extends BaseTest {
 
 
     @Test(groups = "TestDivision", dataProvider = "DoubleValuesForMultiplication")
-    public void testMulOperationWithDoubleValues(double a, double b, double expected) {
+    public void testMulOperationWithDoubleValuesTestNG(double a, double b, double expected) {
         double result = calculator.mult(a, b);
         Assert.assertEquals(result, expected, "Incorrect result of multiplication operation with double params");
     }
@@ -27,7 +27,7 @@ public class MulCalcTest extends BaseTest {
     }
 
     @Test(groups = "TestDivision", dataProvider = "LongValuesForMultiplication")
-    public void testMulOperationWithLongValues(long a, long b, long expected) {
+    public void testMulOperationWithLongValuesTestNG(long a, long b, long expected) {
         long result = calculator.mult(a, b);
         Assert.assertEquals(result, expected, "Incorrect result of multiplication operation with long params");
     }
@@ -36,9 +36,9 @@ public class MulCalcTest extends BaseTest {
     @DataProvider(name = "LongValuesForMultiplication")
     Object[][] LongValuesForDivision() {
         return new Object[][]{
-                {1, 1, 1},
-                {45, 1, 45},
-                {90, 10, 900},
+                {1, -1, 1},
+                {-45, 1, 45},
+                {0, 0, 10},
                 {135, -1, -135},
                 {0, 120, 0}
         };

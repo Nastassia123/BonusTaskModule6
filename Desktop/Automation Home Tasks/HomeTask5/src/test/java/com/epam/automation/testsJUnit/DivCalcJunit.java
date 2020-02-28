@@ -8,8 +8,8 @@ import org.junit.Test;
 public class DivCalcJunit extends BaseTest {
 
     @Test
-    public void FourDivideFour() {
-        long result = calculator.div(4, 4);
+    public void testDivisionOperationWithJUnit() {
+        long result = calculator.div(4, 0);
         Assert.assertTrue(result == 1);
     }
 }

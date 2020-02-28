@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class CtgCalcTest extends BaseTest {
 
     @Test(dataProvider = "ValuesForCtg", description = "Testing Ctg method")
-    public void testCtgFunction(double value, double result) {
+    public void testCotangensFunctionWithTestNG(double value, double result) {
         double actual = calculator.ctg(Math.toRadians(value));
         Assert.assertEquals(actual, result, "Invalid result of Ctg operation");
     }
