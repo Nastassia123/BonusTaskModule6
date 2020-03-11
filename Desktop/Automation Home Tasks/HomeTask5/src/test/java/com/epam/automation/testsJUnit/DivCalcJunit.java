@@ -9,7 +9,7 @@ public class DivCalcJunit extends BaseTest {
 
     @Test
     public void testDivisionOperationWithJUnit() {
-        long result = calculator.div(4, 0);
-        Assert.assertTrue(result == 1);
+        long result = calculator.div(4, 1);
+        Assert.assertTrue(result == 4);
     }
 }

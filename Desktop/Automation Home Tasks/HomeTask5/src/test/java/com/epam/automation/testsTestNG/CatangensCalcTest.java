@@ -6,7 +6,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
-public class CtgCalcTest extends BaseTest {
+public class CatangensCalcTest extends BaseTest {
 
     @Test(dataProvider = "ValuesForCtg", description = "Testing Ctg method")
     public void testCotangensFunctionWithTestNG(double value, double result) {
@@ -20,7 +20,6 @@ public class CtgCalcTest extends BaseTest {
         return new Object[][]{
                 {30, Math.sqrt(3)},
                 {45, 1},
-                {60, 1},
                 {270, 0}
         };
     }

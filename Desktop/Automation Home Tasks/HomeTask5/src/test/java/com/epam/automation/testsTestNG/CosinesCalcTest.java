@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 
 
-public class CosCalcTest extends BaseTest {
+public class CosinesCalcTest extends BaseTest {
 
  @Test(dataProvider = "ValuesForCos", description = "Testing Cos method")
     public void testCosinesFunctionWithTestNG(double value, double result) {

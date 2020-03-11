@@ -19,10 +19,10 @@ public class MulCalcTest extends BaseTest {
     Object[][] DoubleValuesForDivision() {
         return new Object[][]{
                 {1.0, 1.0, 1.0},
-                {45.5, 1.0, 45.5},
-                {90.0, 10.0, 900.0},
-                {135.0, -1.0, -135.0},
-                {0, 120.0, 0}
+                {135.0, 0, 0},
+                {0, -120.0, 0},
+                {-10.0, -12.0, 120},
+                {-10, 3, -30}
         };
     }
 
@@ -36,11 +36,11 @@ public class MulCalcTest extends BaseTest {
     @DataProvider(name = "LongValuesForMultiplication")
     Object[][] LongValuesForDivision() {
         return new Object[][]{
-                {1, -1, 1},
-                {-45, 1, 45},
-                {0, 0, 10},
-                {135, -1, -135},
-                {0, 120, 0}
+                {10000, -10000, -100000000},
+                {-45454545, 1, -45454545},
+                {0, 0, 0},
+                {0, 1200000, 0},
+                {121212, 12000, 1454544000}
         };
     }
 }

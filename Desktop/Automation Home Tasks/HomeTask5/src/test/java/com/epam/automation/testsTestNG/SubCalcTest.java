@@ -16,11 +16,11 @@ public class SubCalcTest extends BaseTest {
     @DataProvider(name = "longParamsForSub")
     Object[][] longValuesForSub() {
         return new Object[][]{
-                {-1, -1, 2},
-                {-3, 1, 2},
-                {90, -45, 90},
-                {135, 0, 136},
-                {0, 120, -120}
+                {-1000000000, -1, -999999999},
+                {999999999, -1, 1000000000},
+                {-1111111111, -888888888, -222222223},
+                {1350000000, 0, 1350000000},
+                {0, 1200000000, -1200000000}
         };
     }
 
@@ -33,10 +33,10 @@ public class SubCalcTest extends BaseTest {
     @DataProvider(name = "doubleParamsForSub")
     Object[][] doubleValuesForSub() {
         return new Object[][]{
-                {-1.0, -1.0, 2.0},
-                {-3.9, 1.5, 2.0},
-                {90.0, -45.0, 90.0},
-                {135.0, 0.0, 136.0},
+                {-1.0, -1.0, 0},
+                {-3.9, 1.5, -5.4},
+                {90.0, -45.0, 135.0},
+                {135.0, 0.0, 135.0},
                 {0.0, 120.0, -120.0}
         };
     }

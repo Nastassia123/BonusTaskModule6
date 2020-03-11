@@ -17,10 +17,10 @@ public class SumCalcTest extends BaseTest {
     @DataProvider(name = "LongParamsForSumTest")
     public Object[][] valuesForSum() {
         return new Object[][]{
-                {-1, -2, 3},
-                {3, -5, -2},
-                {0, 1, 1},
-                {310, -10, 300},
+                {-1000000000, -222222222, -1222222222},
+                {399999999, -5000000, 394999999},
+                {0, 1999999999, 1999999999},
+                {-310000000, 1000000000, 690000000},
                 {0, 0, 0},
         };
     }
@@ -34,10 +34,10 @@ public class SumCalcTest extends BaseTest {
     @DataProvider(name = "DoubleParamsForSumTest")
     public Object[][] DoublevaluesForSum() {
         return new Object[][]{
-                {-1.0, -2.0, 3.0},
+                {-1.0, -2.0, -3.0},
                 {3.0, -5.0, -2.0},
                 {0.0, 1.0, 1.0},
-                {310.0, -10.0, 300.0},
+                {-310.0, 10.0, -300.0},
                 {0.0, 0.0, 0.0},
         };
     }

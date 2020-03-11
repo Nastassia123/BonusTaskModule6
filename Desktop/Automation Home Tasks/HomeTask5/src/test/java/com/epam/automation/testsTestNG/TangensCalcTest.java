@@ -6,7 +6,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
-public class TgCalcTest extends BaseTest {
+public class TangensCalcTest extends BaseTest {
 
  @Test(dataProvider = "ValuesForTg", description = "Testing Tg method")
     public void testTangensFunctionWithTestNG(double value, double result) {

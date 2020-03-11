@@ -21,7 +21,7 @@ public class SqrtCalcTest extends BaseTest {
                 { 1, 1 },
                 { 100, 10 },
                 { -4, 2 },
-                {-1, -1}
+                {0, 0}
         };
     }
 }

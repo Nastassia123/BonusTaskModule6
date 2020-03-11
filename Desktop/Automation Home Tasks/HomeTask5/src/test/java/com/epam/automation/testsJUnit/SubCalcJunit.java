@@ -10,6 +10,6 @@ public class SubCalcJunit extends BaseTest {
     @Test
     public void testSubstructionOperationWithJUnit() {
         long result = calculator.sub(2, 23);
-        Assert.assertTrue(result == 22);
+        Assert.assertTrue(result == -21);
     }
 }

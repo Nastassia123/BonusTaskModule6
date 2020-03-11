@@ -18,10 +18,10 @@ public class DivCalcTest extends BaseTest {
     Object [][] DoubleValuesForDivision(){
         return new Object[][]{
                 {1.0, 0, 1.0},
-                {0, 1.0, 1},
-                {90.0, -10.0, 9.0 },
+                {0, 1.0, 0},
+                {90.0, -10.0, -9.0 },
                 {135.0, -1.0, -135.0},
-                {0, 120.0, 0}
+                {-10, -10, -10}
         };
     }
 
@@ -35,11 +35,11 @@ public class DivCalcTest extends BaseTest {
     @DataProvider(name = "LongValuesForDivision")
     Object [][] LongValuesForDivision(){
         return new Object[][]{
-                {1, 1, 1},
-                {45, 1, 45},
-                {90, 10, 9 },
-                {135, -1, -135},
-                {0, 120, 0}
+                {10000, -10000, -1},
+                {-45454545, 1, -45454545},
+                {0, 0, 0},
+                {0, 1200000, 0},
+                {1200000000, 12000, 100000}
         };
     }
 
