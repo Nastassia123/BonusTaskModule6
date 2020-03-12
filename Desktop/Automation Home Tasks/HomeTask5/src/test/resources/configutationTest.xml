@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Calculator operations suite"  parallel="tests" thread-count="5">
+    <listeners>
+    <listener class-name="com.epam.automation.listeners.TestListeners"></listener>
+    </listeners>
+    
+    <test name="Summation call test">
+        <classes>
+        <class name="com.epam.automation.testsTestNG.CatangensCalcTest"/>
+        <class name="com.epam.automation.testsTestNG.IsPositiveTest"/>
+        <class name="com.epam.automation.testsTestNG.MulCalcTest"/>
+        <class name="com.epam.automation.testsTestNG.PowCalcTest"/>
+        <class name="com.epam.automation.testsTestNG.SubCalcTest"/>
+        <class name="com.epam.automation.testsTestNG.CosinesCalcTest"/>
+        <class name="com.epam.automation.testsTestNG.DivCalcTest"/>
+        <class name="com.epam.automation.testsTestNG.IsNegativeTest"/>
+        <class name="com.epam.automation.testsTestNG.SinCalcTest"/>
+        <class name="com.epam.automation.testsTestNG.SqrtCalcTest"/>
+        <class name="com.epam.automation.testsTestNG.SumCalcTest"/>
+        <class name="com.epam.automation.testsTestNG.TangensCalcTest"/>
+        </classes>
+    </test>
+</suite>
